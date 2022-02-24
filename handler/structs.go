@@ -32,7 +32,7 @@ type InUniversity struct {
 	Name    string   `json:"name"`
 	Country string   `json:"country,omitempty"`
 	Isocode string   `json:"alpha_two_code"`
-	Webpage []string `json:"web_page"`
+	Webpage []string `json:"web_pages"`
 }
 
 /**
