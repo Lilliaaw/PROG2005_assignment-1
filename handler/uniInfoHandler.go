@@ -50,6 +50,6 @@ func infohandleGetRequest(w http.ResponseWriter, r *http.Request) {
 		}
 	} else {
 		//url is missing mandatory components
-		http.Error(w, "No functionality without search. Please use "+UNIINFO_PATH+"{partial_or_complete_university_name}.", http.StatusOK)
+		http.Error(w, "No functionality without search. Please use "+UNIINFO_PATH+"{partial_or_complete_university_name}.", http.StatusNotFound)
 	}
 }

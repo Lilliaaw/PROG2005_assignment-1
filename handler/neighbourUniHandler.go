@@ -60,6 +60,6 @@ func neighhandleGetRequest(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "", http.StatusOK)
 	} else {
 		//url is missing mandatory components
-		http.Error(w, "No functionality without search. Please use "+NEIGHBOURUNIS_PATH+"{country}/{partial_or_complete_university_name}{?limit={number}}.", http.StatusOK)
+		http.Error(w, "No functionality without search. Please use "+NEIGHBOURUNIS_PATH+"{country}/{partial_or_complete_university_name}{?limit={number}}.", http.StatusNotFound)
 	}
 }
